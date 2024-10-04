@@ -1,4 +1,64 @@
+# Initial Setup
+
+## Requirements
+- powershell v.3 (or above), winget for Windows
+- -apt for linux
+
+## Installing npm For Windows
+1. Install fast node manager (fnm) using the following command
+
+```bash
+      winget install Schniz.fnm
+      npm install
+```
+
+2.⁠ ⁠Configure the fnm environment to enable usage of npm command in powershell.
+```bash
+fnm env --use-on-cd | Out-String | Invoke-Expression
+```
+Note: You will need to run this command in new instances of powershell if you need to use npm
+
+3. ⁠Ensure your node version is at least >=20.17.0 by running ⁠ node -v
+
+4. Ensure your npm version is at least >= 10.8.2 by running ⁠ npm -v ⁠
+
+## Installing npm for Linux
+
+```bash
+      sudo apt update
+      sudo apt install nodejs
+      node -v
+      sudo apt install npm
+```
+
+Restart terminal if needed.
+
+
+## Installing npm for MAC
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo >> /Users/brl/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/brl/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+Restart the terminal
+
+```bash
+brew install npm
+npm -v
+node -v
+```
+
+The last two commands must return versions >= 10.8.2 (npm) and >= 20.17.0 (node). 
+
+
+
 # Giveback-dapp
+
+
+
 
 ## Overview
 Giveback-dapp is a decentralized fundraising application built using the Hedera Hashgraph network. It enables users to create fundraising campaigns, donate using HBAR, and track donations with real-time transparency and security through the blockchain.
