@@ -40,7 +40,8 @@ Giveback-dapp is a decentralized fundraising application built using the Hedera 
    Save and rename the file as just `.env`
 - ### Step 3: Deploy the Contract
    Go into web3 directory
-   ```cd ../web3
+  ```bash
+   cd ../web3
    ```
    The deployment script is already present. You just need to run the following command to deploy the contract to the Hedera Testnet:
    ```bash
