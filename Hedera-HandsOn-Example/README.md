@@ -16,11 +16,16 @@
 ```bash
 fnm env --use-on-cd | Out-String | Invoke-Expression
 ```
-Note: You will need to run this command in new instances of powershell if you need to use npm
+#### Note: You will need to run this command in new instances of powershell if you need to use npm
 
-3. ⁠Ensure your node version is at least >=20.17.0 by running ⁠ node -v
+3.⁠ ⁠Download and install node.js
+```bash
+fnm use --install-if-missing 20
+```
 
-4. Ensure your npm version is at least >= 10.8.2 by running ⁠ npm -v ⁠
+4. ⁠Ensure your node version is at least >=20.17.0 by running ⁠ node -v
+
+5. Ensure your npm version is at least >= 10.8.2 by running ⁠ npm -v ⁠
 
 ## Installing npm for Linux
 
